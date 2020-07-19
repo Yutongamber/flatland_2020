@@ -1,0 +1,20 @@
+program: reinforcement_learning/multi_agent_training.py
+method: bayes
+metric:
+    name: evaluation/smoothed_score
+    goal: maximize
+parameters:
+    n_episodes:
+        values: [1500]
+    learning_rate:
+        # default: 0.00005 (rllib: same)
+        values: [0.000040, 0.000045, 0.000050, 0.000055, 0.000060]
+    hidden_size:
+        # default: 128
+        values: [128, 256, 512]
+    buffer_size:
+        # default: 100000
+        values: [50000, 100000, 500000, 1000000]
+    batch_size:
+        # default: 512 (rllib: 32)
+        values: [32, 64, 128, 256]
