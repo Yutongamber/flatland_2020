@@ -1,0 +1,6 @@
+numpy
+matplotlib
+tensorboard
+torch>=1.5.0
+flatland-rl>=2.2.1
+torch>=1.4.0
